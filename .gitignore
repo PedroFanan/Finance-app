@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+dist/
+build/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Uploads (local storage)
+apps/api/uploads/
+
+# Prisma
+apps/api/src/prisma/migrations/
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Turbo
+.turbo/
