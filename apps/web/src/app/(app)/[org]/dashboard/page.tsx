@@ -125,7 +125,7 @@ export default function DashboardPage() {
             <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" />
             <XAxis dataKey="label" tick={{ fontSize: 12, fill: '#64748b' }} />
             <YAxis tick={{ fontSize: 12, fill: '#64748b' }} tickFormatter={(v) => `R$${(v / 1000).toFixed(0)}k`} />
-            <Tooltip formatter={(v: number) => formatCurrency(v)} />
+            <Tooltip formatter={(v) => formatCurrency(Number(v))} />
             <Legend />
             <Bar dataKey="receivable" name="Receitas" fill="#22c55e" radius={[4, 4, 0, 0]} />
             <Bar dataKey="payable" name="Despesas" fill="#ef4444" radius={[4, 4, 0, 0]} />
